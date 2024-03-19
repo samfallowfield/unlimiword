@@ -19,6 +19,8 @@ jobs:
         run: npm install
         # / artifact // this uploads the artifact that it creates, to be downloaded and used by other steps
       - name: Build project
+        run: npm run build
+      - name: Upload artifact to enable deployment
         uses: actions/upload-artifact@v3
         with:
           name: production-files
