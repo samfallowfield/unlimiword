@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/unlimiword/static/css/main.f855e6bc.css",
+    "main.js": "/unlimiword/static/js/main.7859cd3a.js",
+    "static/js/453.25002d72.chunk.js": "/unlimiword/static/js/453.25002d72.chunk.js",
+    "static/media/logo.svg": "/unlimiword/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/unlimiword/index.html",
+    "main.f855e6bc.css.map": "/unlimiword/static/css/main.f855e6bc.css.map",
+    "main.7859cd3a.js.map": "/unlimiword/static/js/main.7859cd3a.js.map",
+    "453.25002d72.chunk.js.map": "/unlimiword/static/js/453.25002d72.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.7859cd3a.js"
+  ]
+}
