@@ -37,10 +37,11 @@ jobs:
           path: ./build
       - name: Run tests
         run: npm run test
-        
+
   deploy:
     # add the build as a dependency for this job
-    needs: build
+    needs: [build, test]
+    if: ${{ needs.test.result == 'success'}}
     runs-on: ubuntu-latest
     steps:
       - name: Download artifact
