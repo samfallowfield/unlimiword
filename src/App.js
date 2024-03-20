@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
 import Header from "./components/atoms/Header";
 import TextTile from "./components/atoms/TextTile";

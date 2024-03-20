@@ -37,6 +37,7 @@ jobs:
           path: ./build
       - name: Run tests
         run: npm run test
+        
   deploy:
     # add the build as a dependency for this job
     needs: build
