@@ -24,7 +24,9 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: production-files
-          path: ./build
+          path: |
+            ./build
+            ./package.json
 
   test:
     needs: build
