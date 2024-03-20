@@ -25,6 +25,18 @@ jobs:
         with:
           name: production-files
           path: ./build
+
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: production-files
+          path: ./build
+      - name: Run tests
+        run: npm run test
   deploy:
     # add the build as a dependency for this job
     needs: build
