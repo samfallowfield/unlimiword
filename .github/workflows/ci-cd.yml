@@ -38,7 +38,10 @@ jobs:
           name: production-files
           path: ./build
       - name: Run tests
-        run: npm run test
+        run: |
+           cd build
+           npm install
+           npm run test
 
   deploy:
     # add the build as a dependency for this job
