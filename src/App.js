@@ -10,6 +10,7 @@ function App() {
         <Header />
       </div>
       <TextTile />
+      <TextTile />
     </div>
   );
 }
