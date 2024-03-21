@@ -37,6 +37,11 @@ jobs:
         with:
           name: production-files
           path: ./build
+      - name: Debug
+        run: |
+          pwd
+          ls -l build
+          ls -l build/src
       - name: Run tests
         run: |
            cd build
