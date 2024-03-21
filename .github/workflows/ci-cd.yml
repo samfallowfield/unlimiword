@@ -40,11 +40,9 @@ jobs:
       - name: Debug
         run: |
           pwd
-          ls -l build
-          ls -l build/src
+          ls -l src
       - name: Run tests
         run: |
-           cd build
            npm install
            npm run test --watchAll=false --rootDir=src
 
