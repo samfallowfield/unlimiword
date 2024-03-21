@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/unlimiword/static/css/main.d108a6fa.css",
-    "main.js": "/unlimiword/static/js/main.203709f8.js",
+    "main.js": "/unlimiword/static/js/main.8ad99639.js",
     "static/js/453.25002d72.chunk.js": "/unlimiword/static/js/453.25002d72.chunk.js",
     "index.html": "/unlimiword/index.html",
     "main.d108a6fa.css.map": "/unlimiword/static/css/main.d108a6fa.css.map",
-    "main.203709f8.js.map": "/unlimiword/static/js/main.203709f8.js.map",
+    "main.8ad99639.js.map": "/unlimiword/static/js/main.8ad99639.js.map",
     "453.25002d72.chunk.js.map": "/unlimiword/static/js/453.25002d72.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d108a6fa.css",
-    "static/js/main.203709f8.js"
+    "static/js/main.8ad99639.js"
   ]
 }
