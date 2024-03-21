@@ -51,9 +51,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: production-files
-          path: |
-            ./build
-            ./package.json
+          path: ./dist
 
   # test:
   #   needs: build
@@ -89,4 +87,4 @@ jobs:
         with:
           # this token is the secret that we set up and allows github pages to deploy our application
           github_token: ${{ secrets.UNLIMIWORLD_ACCESS_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./dist
