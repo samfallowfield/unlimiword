@@ -40,7 +40,7 @@ jobs:
       - name: Debug
         run: |
           pwd
-          ls -l src
+          ls -l
       - name: Run tests
         run: |
            npm install
