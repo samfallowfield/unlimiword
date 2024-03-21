@@ -62,9 +62,9 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: production-files
-          path: ./dist
+          path: ./build
       - name: List files in dist directory
-        run: ls ./dist
+        run: ls ./build
 
   # test:
   #   needs: build
@@ -94,12 +94,12 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: production-files
-          path: ./dist
+          path: ./build
       - name: List files in downloaded artifact directory
-        run: ls ./dist
+        run: ls ./build
       - name: Deploy to github pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           # this token is the secret that we set up and allows github pages to deploy our application
           github_token: ${{ secrets.UNLIMIWORLD_ACCESS_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./build
