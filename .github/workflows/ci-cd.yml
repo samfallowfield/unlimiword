@@ -20,8 +20,7 @@ jobs:
         # / artifact // this uploads the artifact that it creates, to be downloaded and used by other steps
       - name: Build project
         run: npm run build
-      # - name: Run tests
-      #   run: npm run test --watchAll=false 
+
 
   test:
     needs: build
@@ -35,7 +34,6 @@ jobs:
           node-version: 18.x
       - name: Install Dependencies
         run: npm install
-        # / artifact // this uploads the artifact that it creates, to be downloaded and used by other steps
       - name: Build project
         run: npm run build
       - name: run-tests
@@ -55,7 +53,6 @@ jobs:
           node-version: 18.x
       - name: Install Dependencies
         run: npm install
-      # / artifact // this uploads the artifact that it creates, to be downloaded and used by other steps
       - name: Build project
         run: npm run build
       - name: Upload artifact to enable deployment
@@ -65,24 +62,6 @@ jobs:
           path: ./build
       - name: List files in dist directory
         run: ls ./build
-
-  # test:
-  #   needs: build
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Download artifact
-  #       uses: actions/download-artifact@v3
-  #       with:
-  #         name: production-files
-  #         path: ./build
-  #     - name: Debug
-  #       run: |
-  #         pwd
-  #         ls -AlFh
-  #     - name: Run tests
-  #       run: |
-  #          npm install
-  #          npm run test --watchAll=false --rootDir=src
 
   deploy:
     # add the build as a dependency for this job

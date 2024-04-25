@@ -1,7 +1,9 @@
 import React from "react";
+import { useState } from "react";
 import "./App.css";
 import Header from "./components/atoms/Header";
-import TextTile from "./components/atoms/TextTile";
+import Wordle from "./components/molecules/Wordle";
+
 
 function App() {
   return (
@@ -9,8 +11,7 @@ function App() {
       <div className="header">
         <Header />
       </div>
-      <TextTile />
-      <TextTile />
+      <Wordle />
     </div>
   );
 }
