@@ -3,7 +3,6 @@ import { useState, useRef, useEffect } from "react";
 import Row from "./Row";
 import Keyboard from "./Keyboard";
 import { LETTERS, potentialWords } from "../../data/lettersAndWords";
-import { Alert } from "bootstrap";
 
 const SOLUTION = "table";
 export default function Wordle() {
